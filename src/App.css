@@ -1,0 +1,25 @@
+body {
+	overflow-y: scroll;
+  }
+  
+
+  body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #A6937C;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #73624D;
+	border-radius: 5px;
+  }
+  
+
+  body {
+	scroll-behavior: smooth;
+  }
+
+#root {
+  margin: 0 auto;
+
+}
+

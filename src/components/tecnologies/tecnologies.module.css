@@ -1,0 +1,38 @@
+.parallaxContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallaxLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+}
+
+.layerBack {
+  background-color: #333; /* Color de fondo de la capa de fondo */
+  transform: translateY(-50%);
+}
+
+.layerFront {
+  background-color: transparent;
+  transform: translateY(0);
+}
+
+/* Estilos adicionales según tus necesidades */
+.techSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill {
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  color: #333;
+}
