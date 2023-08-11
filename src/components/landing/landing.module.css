@@ -1,3 +1,9 @@
+.hi {
+  color: transparent; /* Hace que el texto sea transparente */
+  -webkit-text-stroke: 2px #BF8383; /* Trazo central */
+  -webkit-text-fill-color: transparent; /* Relleno de texto transparente */
+}
+
 .iconShadow {
   filter: drop-shadow(0 10px 10px rgb(64, 48, 34));
 }
@@ -8,10 +14,10 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
   }
 }
 
 .iconShadow {
-  animation: floating 2s ease-in-out infinite; /* Puedes ajustar la duración y el timing según tu preferencia */
+  animation: floating 1.5s ease-in-out infinite; /* Puedes ajustar la duración y el timing según tu preferencia */
 }

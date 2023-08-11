@@ -15,9 +15,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="flex flex-col items-center pb-20 pt-20 bg-medium">
-      <h1 className="text-4xl font-bold mb-8 text-ligth bg-dark rounded">Proyects</h1>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mx-4">
+    <div className="flex flex-col 3xl:w-screen h-auto items-center bg-white opacity-100">
+      <h1 className="w-443 h-24 text-center font-title font-bold tracking-normal text-black opacity-100 text-7xl mt-24">My Proyects</h1>
+      <div className="w-52 h-3 bg-red p-0 rounded-md opacity-100 mt-2.5"></div>
+      <div className="grid gap-x-48 gap-y-12 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 mt-28 mb-28">
         {projects && projects.map((project, index) => (
           <Card
             key={index}

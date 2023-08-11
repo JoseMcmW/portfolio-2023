@@ -13,21 +13,22 @@ const ProjectDetailModal = ({ project, onClose }) => {
         className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center"
         onClick={handleOutsideClick}
       >
-        <div className="bg-white rounded-lg p-4 w-8/12 h-auto overflow-auto">
-          <h2 className="text-5xl font-bold mb-10 text-center">
-            {project.name}
-          </h2>
-          <div className="flex flex-row">
-            <div className="w-6/12 flex justify-center items-center mr-5">
+        <div className="bg-gray-medium rounded-lg p-12 w-9/12 h-3/5 overflow-auto opacity-100">
+          <div className="flex flex-row mt-3">
+            <div className="w-6/12 flex flex-col justify-center items-center mr-5">
+              <h2 className="text-5xl font-bold text-center font-title">
+                {project.name}
+              </h2>
+              <div className="w-40 h-2 bg-red p-0 rounded-md opacity-100 mt-3 mb-10"></div>
               <img
                 src={project.image}
                 alt="img"
                 className="max-w-full h-auto mb-4"
               />
             </div>
-            <div className="w-6/12">
+            <div className="flex flex-col ml-5 justify-center w-6/12 font-pharagrap">
               <p className="mb-2">
-                <b>Date:</b> {project.date.toLocaleDateString()}
+                <b className="font-title">Date:</b> {project.date.toLocaleDateString()}w
               </p>
               <p className="mb-3">
                 <b>Lenguage:</b> {project.language}
@@ -51,7 +52,7 @@ const ProjectDetailModal = ({ project, onClose }) => {
           </div>
           <div className="mt-4 text-center">
             <button
-              className="px-4 py-2 bg-black text-white rounded"
+              className="w-40 h-20 text-2xl bg-red text-white rounded-lg opacity-100"
               onClick={(e) => {
                 e.stopPropagation(); // Evita que el clic se propague al fondo
                 onClose();

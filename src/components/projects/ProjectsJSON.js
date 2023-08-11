@@ -18,7 +18,7 @@ export const projects = [
     name: "Pokémons",
 		date: new Date(2023, 6, 1),
 		language: "Javascript",
-		image: "../../../public/img/Portada Pokemon App.png",
+		image: "../../../public/img/Pokemon.png",
 		technologies: {
 				frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 				backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
@@ -32,7 +32,7 @@ export const projects = [
     name: "Rick and Morty",
 		date: new Date(2023, 5, 1),
 		language: "Javascript",
-		image: "../../../public/img/Portada Rick and Morty App.png",
+		image: "../../../public/img/RickAndMorty.png",
 		technologies: {
 			frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 			backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
@@ -60,7 +60,7 @@ export const projects = [
     name: "Portfolio 2022",
 		date: new Date(2022, 7, 1),
 		language: "Javascript",
-		image: "../../../public/img/Portada Portfolio.png",
+		image: "../../../public/img/Portfolio.png",
 		technologies: {
 				frontend: ["Bootstrap", "Google Font"],
 				backend: ["N/A"]
