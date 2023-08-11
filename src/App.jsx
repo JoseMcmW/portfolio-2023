@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 import "./App.css";
 
 function App() {
-  const techSkills = ["React", "JavaScript", "Node.js", "HTML", "CSS"];
+  const techSkills = ["React", "JavaScript", "Node.js", "HTML", "CSS", "Express", "Bootstrap", "Tailwind", "Sequelize", "PostgreSQL", "MySQL", "Git", "Github", "Trello", "Postman", "XAAMP",];
 
   return (
     <>

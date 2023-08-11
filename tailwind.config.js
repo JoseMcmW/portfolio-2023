@@ -53,6 +53,9 @@ export default {
         '789px': '789px',
         '320px': '320px',
         '1096px': '1096px'
+      },
+      backgroundImage: {
+        'skill': "url('./public/img/bg-code.png')",
       }
     },
   },
