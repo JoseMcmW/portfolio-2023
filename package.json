@@ -10,10 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
+    "classnames": "^2.3.2",
     "feather-icons": "^4.29.0",
+    "file-saver": "^2.0.5",
+    "pdfjs-dist": "^3.9.179",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-intersection-observer": "^9.5.2",
+    "react-pdf-viewer": "^0.1.0",
     "react-scroll-parallax": "^3.4.2",
     "styled-components": "^5.3.11",
     "tailwindcss-animated": "^1.0.1",

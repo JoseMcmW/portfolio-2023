@@ -4,6 +4,18 @@
   -webkit-text-fill-color: transparent; /* Relleno de texto transparente */
 }
 
+.lupa {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.lupa:hover {
+  transform: scale(1.5); /* Ajusta el valor para el efecto de lupa deseado */
+}
+
+
 .iconShadow {
   filter: drop-shadow(0 10px 10px rgb(64, 48, 34));
 }

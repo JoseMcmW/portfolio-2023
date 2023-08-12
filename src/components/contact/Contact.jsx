@@ -1,6 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: ""
+  })
+
+  const handleChange = (event) => {
+    setForm({...form, [event.target.name]: event.target.value});
+  }
+
   return (
     <div className="flex flex-col items-center 3xl:w-screen h-auto bg-gray opacity-100">
       <h1 className="text-7xl text-center font-bold font-title tracking-normal text-black opacity-100 pt-24">
@@ -17,7 +29,10 @@ const Contact = () => {
               Name
             </label>
             <input
-              type="name"
+              type={"text"}
+              value={form.name}
+              name={"name"}
+              onChange={handleChange}
               id="name"
               placeholder="Name"
               required
@@ -32,7 +47,10 @@ const Contact = () => {
               Last Name
             </label>
             <input
-              type="lastname"
+              type={"text"}
+              value={form.lastName}
+              name={"lastName"}
+              onChange={handleChange}
               id="lastname"
               placeholder="Last Name"
               required
@@ -47,7 +65,10 @@ const Contact = () => {
               Your email
             </label>
             <input
-              type="email"
+              type={"text"}
+              value={form.email}
+              name={"email"}
+              onChange={handleChange}
               id="email"
               placeholder="name@flowbite.com"
               required
@@ -62,7 +83,10 @@ const Contact = () => {
               Subject
             </label>
             <input
-              type="text"
+              type={"text"}
+              value={form.subject}
+              name={"subject"}
+              onChange={handleChange}
               id="subject"
               placeholder="Let us know how we can help you"
               required
@@ -77,6 +101,10 @@ const Contact = () => {
               Your message
             </label>
             <textarea
+              type={"text"}
+              value={form.message}
+              name={"message"}
+              onChange={handleChange}
               id="message"
               rows="6"
               placeholder="Leave a comment..."
