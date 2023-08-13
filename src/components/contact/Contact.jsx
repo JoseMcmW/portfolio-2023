@@ -1,20 +1,23 @@
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
+import { validate } from "./validate";
 
 const Contact = () => {
+  const [error, setError] = useState({});
   const [form, setForm] = useState({
     name: "",
     lastName: "",
     email: "",
     subject: "",
-    message: ""
-  })
+    message: "",
+  });
 
   const handleChange = (event) => {
-    setForm({...form, [event.target.name]: event.target.value});
-  }
+    setForm({ ...form, [event.target.name]: event.target.value });
+    setError(validate({ ...form, [event.target.name]: event.target.value }));
+  };
 
   return (
-    <div className="flex flex-col items-center 3xl:w-screen h-auto bg-gray opacity-100">
+    <div className="flex flex-col items-center 3xl:w-screen h-auto bg-gray opacity-100 font-pharagrap">
       <h1 className="text-7xl text-center font-bold font-title tracking-normal text-black opacity-100 pt-24">
         Let's talk about your next Project
       </h1>
@@ -39,6 +42,13 @@ const Contact = () => {
               className="w-853 h-20 bg-gray-medium rounded-x opacity-100 font-pharagrap text-left tracking-normal text-black text-2xl pl-11"
             />
           </div>
+          <div
+            className={`h-6 transition-all duration-200 ease-in-out ${
+              error.name ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {error.name && <span className="text-red">{error.name}</span>}
+          </div>
           <div className="mt-8">
             <label
               htmlFor="lastname"
@@ -56,6 +66,15 @@ const Contact = () => {
               required
               className="w-853 h-20 bg-gray-medium rounded-x opacity-100 font-pharagrap text-left tracking-normal text-black text-2xl pl-11"
             />
+          </div>
+          <div
+            className={`h-6 transition-all duration-200 ease-in-out ${
+              error.lastName ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {error.lastName && (
+              <span className="text-red">{error.lastName}</span>
+            )}
           </div>
           <div className="mt-8">
             <label
@@ -75,6 +94,13 @@ const Contact = () => {
               className="w-853 h-20 bg-gray-medium rounded-x opacity-100 font-pharagrap text-left tracking-normal text-black text-2xl pl-11"
             />
           </div>
+          <div
+            className={`h-6 transition-all duration-200 ease-in-out ${
+              error.email ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {error.email && <span className="text-red">{error.email}</span>}
+          </div>
           <div className="mt-8">
             <label
               htmlFor="subject"
@@ -92,6 +118,13 @@ const Contact = () => {
               required
               className="w-853 h-20 bg-gray-medium rounded-x opacity-100 font-pharagrap text-left tracking-normal text-black text-2xl pl-11"
             />
+          </div>
+          <div
+            className={`h-6 transition-all duration-200 ease-in-out ${
+              error.subject ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {error.subject && <span className="text-red">{error.subject}</span>}
           </div>
           <div className="mt-8">
             <label
@@ -114,7 +147,24 @@ const Contact = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="w-52 h-20 bg-red rounded-lg opacity-100 text-2xl my-9 text-white"
+              disabled={
+                Object.keys(error).length > 0 ||
+                !form.name ||
+                !form.lastName ||
+                !form.email ||
+                !form.subject ||
+                !form.message
+              }
+              className={`w-52 h-20 bg-red rounded-lg text-2xl my-9 text-white ${
+                Object.keys(error).length > 0 ||
+                !form.name |
+                !form.lastName ||
+                !form.email ||
+                !form.subject ||
+                !form.message
+                  ? "opacity-50 cursor-not-allowed"
+                  : "opacity-100 cursor-pointer"
+              }`}
             >
               Send message
             </button>
