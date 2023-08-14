@@ -1,12 +1,13 @@
 import React, { useState, ReactDOM } from "react";
 import { saveAs } from "file-saver";
+import CVFile from "../../assets/doc/cv-jose.pdf";
 
 const CVModal = ({ onClose }) => {
 
   const handleDownload = () => {
     // Lógica para descargar el CV
     saveAs(
-      "../../../public/doc/cv-jose.pdf",
+      CVFile,
       "Full Stack Web Developer Jose Centeno.pdf"
     );
   };
