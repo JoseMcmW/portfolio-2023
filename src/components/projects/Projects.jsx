@@ -15,10 +15,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-screen flex flex-col 3xl:w-screen h-auto items-center bg-white opacity-100">
-      <h1 className="w-10/12 lg:w-443 h-16 text-center font-title font-bold tracking-normal text-black opacity-100 text-5xl 2xl:text-6xl 3xl:text-7xl mt-16">My Proyects</h1>
-      <div className="w-52 h-2 bg-red p-0 rounded-md opacity-100 mt-0 2xl:mt-2.5 3xl:mt-7"></div>
-      <div className="w-11/12 grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 mb-28">
+    <div className="w-full flex flex-col 3xl:w-screen h-auto items-center bg-white opacity-100">
+      <h1 className="w-10/12 lg:w-443 h-16 text-center font-title font-bold tracking-normal text-black opacity-100 text-5xl lg:text-6xl xl:text-7xl mt-16">My Projects</h1>
+      <div className="w-52 h-2 bg-red p-0 rounded-md opacity-100 mt-0 lg:mt-5 xl:mt-9 2xl:mt-2.5"></div>
+      <div className="w-11/12 grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 mb-16 content-center">
         {projects && projects.map((project, index) => (
           <Card
             key={index}

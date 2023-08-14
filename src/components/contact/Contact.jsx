@@ -82,7 +82,7 @@ const Contact = () => {
       <h1 className="w-10/12 text-5xl lg:text-7xl text-center font-bold font-title tracking-normal text-black opacity-100 pt-16 lg:pt-24">
         Let's talk about your next Project
       </h1>
-      <div className="w-52 h-2 lg:h-3 bg-red p-0 rounded-md opacity-100 mt-5 lg:mt-8"></div>
+      <div className="w-52 h-2 bg-red p-0 rounded-md opacity-100 mt-0 md:mt-3 lg:mt-5 xl:mt-9 2xl:mt-2.5"></div>
       <div className="w-11/12 lg:w-1005 bg-white rounded-xl mt-16 shadow-lg mb-14">
         <form onSubmit={handleSubmit} className="mt-10 lg:mt-14 mx-7 lg:mx-20">
           <div>
@@ -217,7 +217,7 @@ const Contact = () => {
                 !form.subject ||
                 !form.message
               }
-              className={`w-36 h-16 lg:w-52 lg:h-20 bg-red rounded-lg text-lg lg:text-2xl my-9 text-white ${
+              className={`w-36 h-16 lg:w-52 lg:h-20 bg-red rounded-lg text-lg lg:text-2xl my-9 text-white font-pharagrap ${
                 processing ||
                 Object.keys(error).length > 0 ||
                 !form.name ||
