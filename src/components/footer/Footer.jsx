@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import CVModal from "../CV/ShowCv";
+import linkedin from "../../assets/img/Icon feather-linkedin.svg";
+import github from "../../assets/img/Icon feather-github.svg";
+import whatsap from "../../assets/img/ic-whatsapp.svg";
+import cv from "../../assets/img/ic-cv.svg"
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,11 +25,11 @@ const Footer = () => {
         </div>
         <div>
         <div className="flex flex-row space-x-10 w-72 h-10 opacity-100 mt-10">
-          <a href="https://www.linkedin.com/in/josemcentenoc/"><img src="../../../public/img/Icon feather-linkedin.svg" alt="linkedin" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
-          <a href="https://github.com/JoseMcmW"><img src="../../../public/img/Icon feather-github.svg" alt="github" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
-          <a href="https://wa.me/5491137857337"><img src="../../../public/img/ic-whatsapp.svg" alt="whatsapp" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
+          <a href="https://www.linkedin.com/in/josemcentenoc/"><img src={linkedin} alt="linkedin" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
+          <a href="https://github.com/JoseMcmW"><img src={github} alt="github" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
+          <a href="https://wa.me/5491137857337"><img src={whatsap} alt="whatsapp" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/></a>
           <button onClick={openModal}>
-            <img src="../../../public/img/ic-cv.svg" alt="cv" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/>
+            <img src={cv} alt="cv" className="w-11 h-10 opacity-100 transform transition-transform hover:scale-150"/>
           </button>
         </div>
         </div>
