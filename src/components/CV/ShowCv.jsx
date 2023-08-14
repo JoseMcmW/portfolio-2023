@@ -25,7 +25,7 @@ const CVModal = ({ onClose }) => {
           </button>
         </div>
 
-        <button onClick={onClose} className="mt-4 text-sm text-gray-500 bg-red text-white w-16 h-7">
+        <button onClick={onClose} className="mt-4 text-sm text-gray-500 bg-red text-white w-16 h-7 rounded">
           Close
         </button>
       </div>
