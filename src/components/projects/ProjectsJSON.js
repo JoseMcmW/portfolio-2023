@@ -17,7 +17,7 @@ export const projects = [
 				frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 				backend: ["Node", "Express", "Axios", "Mercadopago", "JSON Web Token (JWT)", "bcrypt ", "google-auth-library", "nodemailer", "PostgreSQL", "Sequelize"]
 			},
-		description: "Shop Connect nace del proyecto final del bootcampo henry, este fue un proyecto grupal que se realizo con mucha dedicación, planificación y aporte de cada uno de sus integrantes. Shop Connect es un ecommerce de venta de zapatos muy completa, que cuenta con Filtros combinados y ordenamiento, formularios combinados, Carrito de compras con persistencia en local storage y base de datos, pasarela de pagos con posibilidad de compra exitosa y rechazada, ruteo seguro según rol, autorización de 3ros, cloudinary, notificaciones por mail, dashboard admin, borrado lógico, Local Storage y persistencia de datos.",
+		description: "Shop Connect was born from the final project of bootcampo henry, this was a group project that was done with a lot of dedication, planning and input from each of its members.Shop Connect is a very complete ecommerce for selling shoes, which has combined filters and sorting, combined forms, shopping cart with persistence in local storage and database, payment gateway with the possibility of successful and rejected purchase, secure routing according to role, third party authorization, cloudinary, email notifications, admin dashboard, logical deletion, local storage and database persistence, and a secure and easy to use interface.",
 		link_deploy: "https://shopconnectt.onrender.com/",
 		link_repositorio: "https://github.com/JoseMcmW/Shop-Connect"
 	},
@@ -31,7 +31,7 @@ export const projects = [
 				frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 				backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
 			},
-		description: "Pokémons nace del proyecto individual del bootcampo henry. Es una SPA (Single Page Application) la cual incluía: autenticación de usuario, filtrados combinados, guardar personajes favoritos, eliminación de personajes favoritos, visualización de los detalles del personaje. Deploy del Backend con Railway y Frontend con Vercel.",
+		description: "Pokémons was born from the individual project of bootcampo henry. It is a SPA (Single Page Application) which included: user authentication, combined filtering, saving favorite characters, deleting favorite characters, displaying character details. Deploy the Backend with Railway and Frontend with Vercel.",
 		link_deploy: "https://pokemon-frontend-flax.vercel.app/home",
 		link_repositorio: ["https://github.com/JoseMcmW/pokemon-frontend", "https://github.com/JoseMcmW/pokemon-backend"]
 	},
@@ -45,7 +45,7 @@ export const projects = [
 			frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 			backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
 			},
-		description: "Diseñar y desarrollar una App de Personajes de Rick and Morty, la cual incluía: autenticación de usuario, filtrados combinados, guardar personajes favoritos, eliminación de personajes favoritos, visualización de los detalles del personaje.",
+		description: "Design and develop a Rick and Morty Character App, which included: user authentication, combined filtering, saving favorite characters, deleting favorite characters, displaying character details.",
 		link_deploy: "",
 		link_repositorio: ["https://github.com/JoseMcmW/rick-and-morty-app", "https://github.com/JoseMcmW/rick-and-morty-app-server"]
 	},
@@ -59,7 +59,7 @@ export const projects = [
 			frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 			backend: ["Node", "Express", "Axios"]
 			},
-		description: "Es una App creada para la búsqueda y almacenaje de video juegos, contiene filtrado y paginado",
+		description: "It is an App created for the search and storage of video games, it contains filtering and paging.",
 		link_deploy: "",
 		link_repositorio: ["https://github.com/JoseMcmW/video-game-frontend", "https://github.com/JoseMcmW/video-games-backend"]
   },
@@ -73,7 +73,7 @@ export const projects = [
 				frontend: ["Bootstrap", "Google Font"],
 				backend: ["N/A"]
 			},
-		description: "Es mi primer portfolio creado con vanilla Javascript coincientemente para fines educativos. Se utilizo tambien Bootstrap y google Font.",
+		description: "This is my first portfolio created with vanilla Javascript for educational purposes. Bootstrap and google Font were also used.",
 		link_deploy: "https://josemcmw.github.io/",
 		link_repositorio: "https://github.com/JoseMcmW/JoseMcmW.github.io"
 	},
@@ -87,13 +87,13 @@ export const projects = [
 				frontend: ["React", "React-context", "React-router-dom", "React-icons"],
 				backend: ["N/A"]
 			},
-		description: "Es una app para buscar Películas, las cuales puedes guardar en una lista para ver luego o las peliculas ya vistas.",
+		description: "It is an app to search for Movies, which you can save in a list to watch later or the movies already seen.",
 		link_deploy: "",
 		link_repositorio: "https://github.com/JoseMcmW/Movie-Search"
 	},
 	{
 		id: 7,
-    name: "Calculadora",
+    name: "Calculator",
 		date: new Date(2021, 11, 1),
 		language: "Javascript",
 		image: calculator,
@@ -101,7 +101,7 @@ export const projects = [
 				frontend: [],
 				backend: []
 			},
-		description: "Es una calculadora realizada con vanilla Javascript únicamente, esto con fines educativos.",
+		description: "It is a calculator made with vanilla Javascript only, this for educational purposes.",
 		link_deploy: "https://64c93ec273e4ad0d07f2b6c5--dreamy-kitten-c03a26.netlify.app/",
 		link_repositorio: "https://github.com/JoseMcmW/Calculadora"
   },
