@@ -1,10 +1,18 @@
+import shopConnect from "../../assets/img/PortadaShopConnect.png";
+import pokemon from "../../assets/img/Pokemon.png";
+import rickMorty from "../../assets/img/RickAndMorty.png";
+import videoGames from "../../assets/img/PortadaVideoGame.png";
+import portfolio from "../../assets/img/Portfolio.png";
+import movideSearch from "../../assets/img/movieSearch.png";
+import calculator from "../../assets/img/calculator.png"
+
 export const projects = [
   {
 		id: 1,
     name: "Shop Connect",
 		date: new Date(2023, 7, 1),
 		language: "Javascript",
-		image: "../../../public/img/PortadaShopConnect.png",
+		image: shopConnect,
 		technologies: {
 				frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 				backend: ["Node", "Express", "Axios", "Mercadopago", "JSON Web Token (JWT)", "bcrypt ", "google-auth-library", "nodemailer", "PostgreSQL", "Sequelize"]
@@ -18,7 +26,7 @@ export const projects = [
     name: "Pokémons",
 		date: new Date(2023, 6, 1),
 		language: "Javascript",
-		image: "../../../public/img/Pokemon.png",
+		image: pokemon,
 		technologies: {
 				frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 				backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
@@ -32,7 +40,7 @@ export const projects = [
     name: "Rick and Morty",
 		date: new Date(2023, 5, 1),
 		language: "Javascript",
-		image: "../../../public/img/RickAndMorty.png",
+		image: rickMorty,
 		technologies: {
 			frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 			backend: ["Node", "Express", "Axios", "PostgreSQL", "Sequelize"]
@@ -46,7 +54,7 @@ export const projects = [
     name: "Video Games",
 		date: new Date(2023, 2, 1),
 		language: "Javascript",
-		image: "../../../public/img/PortadaVideoGame.png",
+		image: videoGames,
 		technologies: {
 			frontend: ["React", "Axios", "Redux", "Redux-thunk"],
 			backend: ["Node", "Express", "Axios"]
@@ -60,7 +68,7 @@ export const projects = [
     name: "Portfolio 2022",
 		date: new Date(2022, 7, 1),
 		language: "Javascript",
-		image: "../../../public/img/Portfolio.png",
+		image: portfolio,
 		technologies: {
 				frontend: ["Bootstrap", "Google Font"],
 				backend: ["N/A"]
@@ -74,7 +82,7 @@ export const projects = [
     name: "Movie Search",
 		date: new Date(2021, 12, 1),
 		language: "Javascript",
-		image: "../../../public/img/movieSearch.png",
+		image: movideSearch,
 		technologies: {
 				frontend: ["React", "React-context", "React-router-dom", "React-icons"],
 				backend: ["N/A"]
@@ -88,7 +96,7 @@ export const projects = [
     name: "Calculadora",
 		date: new Date(2021, 11, 1),
 		language: "Javascript",
-		image: "../../../public/img/calculator.png",
+		image: calculator,
 		technologies: {
 				frontend: [],
 				backend: []
