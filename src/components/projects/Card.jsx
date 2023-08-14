@@ -8,17 +8,17 @@ const Card = ({ title, frontend, backend, image, onClick }) => {
     backgroundPosition: "center", // Centra la imagen en el contenedor
   };
   return (
-    <div className="w-696 h-481 opacity-100 relative rounded-xl overflow-hidden group"
-      onClick={onClick} // Llama a la función onClick al hacer clic en la tarjeta
+    <div className="w-full md:w-96 h-56 md:h-72 lg:w-96 lg:h-72 2xl:w-443 3xl:w-610 opacity-100 relative rounded-xl overflow-hidden group md:mx-4 lg:mx-6 my-4 md:my-6 lg:my-8"
+      onClick={onClick}
       style={cardStyle}>
-      <div className="w-full h-72 opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent text-white p-5 absolute bottom-0 flex flex-col justify-end animated fadeInUp">
-        <h2 className="w-72 h-12 text-left font-bold text-white text-title text-4xl ml-8 mb-2">
+      <div className="w-full md:h-36 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent text-white p-2 md:p-3 lg:p-4 absolute bottom-0 flex flex-col justify-end animated fadeInUp">
+        <h2 className="w-40 md:w-56 lg:w-64 h-6 md:h-8 lg:h-8 text-left font-bold text-white text-title text-xl md:text-2xl lg:text-2xl ml-2 md:ml-3 lg:ml-4 mb-1 md:mb-2 lg:mb-2">
           {title}
         </h2>
-        <p className="w-610 text-xl text-left font-pharagrap tracking-normal text-white ml-8">
+        <p className="w-56 md:w-56 lg:w-64 text-xs md:text-base lg:text-base text-left font-pharagrap tracking-normal text-white ml-2 md:ml-3 lg:ml-4">
           <b>Frontend:</b> {frontend && frontend ? frontend : "N/A"}
         </p>
-        <p className="w-610 text-xl text-left font-pharagrap tracking-normal text-white ml-8 mb-7">
+        <p className="w-56 md:w-56 lg:w-64 text-xs md:text-base lg:text-base text-left font-pharagrap tracking-normal text-white ml-2 md:ml-3 lg:ml-4 mb-2 md:mb-3 lg:mb-3">
           <b>Backend:</b> {backend && backend ? backend : "N/A"}
         </p>
       </div>
