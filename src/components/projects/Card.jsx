@@ -8,7 +8,7 @@ const Card = ({ title, frontend, backend, image, onClick }) => {
     backgroundPosition: "center", // Centra la imagen en el contenedor
   };
   return (
-    <div className="w-full md:w-96 h-56 md:h-72 lg:w-96 lg:h-72 2xl:w-443 3xl:w-610 opacity-100 relative rounded-xl overflow-hidden group md:mx-4 lg:mx-6 my-4 md:my-6 lg:my-8"
+    <div className="w-full h-56 md:h-72 lg:h-72 opacity-100 relative rounded-xl overflow-hidden group "
       onClick={onClick}
       style={cardStyle}>
       <div className="w-full md:h-36 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black via-transparent to-transparent text-white p-2 md:p-3 lg:p-4 absolute bottom-0 flex flex-col justify-end animated fadeInUp">
